@@ -1,0 +1,61 @@
+*{
+	margin: 0px; /* Расстояние от одного блока до другого, межблоковое пространство, Поле */
+	padding: 0px; /* Отступ от содержимого до края блока */
+}
+
+a{ /* Ссылки */
+	text-decoration: none;
+}
+
+li{ /* Списки */
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	font-family: 'Neucha', cursive;
+	font-family: 'Playfair Display', serif;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+    background: url(img/5R1r5u9m2o5.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+  display: block;
+  width: 400px;
+  margin: 50px auto;
+  font: 30px Neucha;
+  text-align: center;
+  color: #000;
+}
+
+nav{
+	margin: auto;
+	width: 800px;
+	height: 100px;
+}
+
+.navigation{
+	font-size: 14px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.navigation a{
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	font: 20px 'Neucha';
+}
+
+.navigation a:hover{
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+	box-shadow:0 0 10px #000;
+}
