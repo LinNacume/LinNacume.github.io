@@ -4,26 +4,85 @@
 	<meta charset="UTF-8">
 	<title>Lin Nacume website</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Neucha|Noto+Sans|Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<header>
-		<nav>
-		<div class="navigation" id="myNavigation">
-			<a href="index.html">HOME</a>
-			<a href="">PORTFOLIO</a>
-			<a href="">VIDEOGAME BLOG</a>
-			<a href="">VIDEOGAME MODDING</a>
+	<div id="bodySite">
+		<div class="scene" id="scene">
+			<div class="sky"></div>
+			<div class="sun"></div>
+			<div class="moon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="stars">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="cloud">
+		    	<img src="img/cloud-01.png" alt="" class="cloud1">
+    			<img src="img/cloud-02.png" alt="" class="cloud2">
+    			<img src="img/cloud-03.png" alt="" class="cloud3">
+    			<img src="img/cloud-04.png" alt="" class="cloud4">
+			</div>
+			<div class="waves">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+			</div>
+			<div class="water"></div>
+			<div class="waterFilter"  id="water">
+				<svg width="0" height="0"
+ 						xmlns="http://www.w3.org/2000/svg"
+ 						xmlns:xlink="http://www.w3.org/1999/xlink">
+  						<filter id="sketch">
+    						<feTurbulence type="fractalNoise" baseFrequency=".05 .5" numOctaves="3" result="noise1"></feTurbulence>
+    						<feColorMatrix in="noise1" type="hueRotate" values="0" result="noise2">
+      							<animate attributeName="values" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    						</feColorMatrix>
+    						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="noise2" />
+  						</filter>
+				</svg>
+			</div>
 		</div>
-		</nav>
-	</header>
+		<div class="content">
+			<header>
+				<nav>
+					<div class="navigation" id="myNavigation">
+						<a href="index.html">HOME</a>
+						<a href="">PORTFOLIO</a>
+						<a href="">VIDEOGAME BLOG</a>
+						<a href="">VIDEOGAME MODDING</a>
+						<div id="switch">
+      						<div id="circle"></div>
+    					</div>
+					</div>
+				</nav>
+			</header>
+			<p>Hello World!<br />I’m Lin Nacume.<br />I have bank debts, no work. And I'm sitting learning programming on the github site.<br />And my english is very bad :)</p>
+		</div>
+	</div>
 
-	<p>Hello World!<br />I’m Lin Nacume.<br />I have bank debts, no work. And I'm sitting learning programming on the github site.<br />And my english is very bad :)</p>
+	<script src="js/script.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
 
 </body>
 </html>
 
 
-	<script src="js/script.js"></script>
+	
 </body>
 </html>
