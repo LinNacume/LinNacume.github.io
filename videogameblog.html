@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lin Nacume website</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="Lin.ico">
+
+</head>
+<body>
+	<div id="bodySite">
+		<div class="scene" id="scene">
+			<div class="sky"></div>
+			<div class="sun"></div>
+			<div class="moon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="stars">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<!-- <div class="cloud">
+		    	<img src="img/cloud-01.png" alt="" class="cloud1">
+    			<img src="img/cloud-02.png" alt="" class="cloud2">
+    			<img src="img/cloud-03.png" alt="" class="cloud3">
+    			<img src="img/cloud-04.png" alt="" class="cloud4">
+			</div>
+			<div class="waves">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+			</div> -->
+			<div class="water"></div>
+			<div class="waterFilter"  id="water">
+				<svg width="0" height="0"
+ 						xmlns="http://www.w3.org/2000/svg"
+ 						xmlns:xlink="http://www.w3.org/1999/xlink">
+  						<filter id="sketch">
+    						<feTurbulence type="fractalNoise" baseFrequency=".05 .5" numOctaves="3" result="noise1"></feTurbulence>
+    						<feColorMatrix in="noise1" type="hueRotate" values="0" result="noise2">
+      							<animate attributeName="values" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    						</feColorMatrix>
+    						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="noise2" />
+  						</filter>
+				</svg>
+			</div>
+		</div>
+		<div class="content">
+			<header>
+				<nav>
+					<div class="navigation" id="myNavigation">
+						<a href="index.html">HOME</a>
+<!-- 						<a href="">PORTFOLIO</a> -->
+						<a href="videogameblog.html">VIDEOGAME BLOG</a>
+						<a href="videogamemodding.html">VIDEOGAME MODDING</a>
+						<a id="menu" href="#" class="icon">&#9776;</a>	
+					</div>
+				</nav>
+			</header>
+			<main>
+				<!-- <div id="switch">
+      				<div id="circle"></div>
+    			</div> -->
+				<div class="videos_container">
+					<div class="videos">
+						<div class="videos_item">
+							<iframe width="275" height="155" src="https://www.youtube.com/embed/_opzTsr_uuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <img src="img/company_icons/1.png" alt=""> -->
+							<h2>Кратко про Spider-Man PS1</h2>
+							<h3>Краткий пересказ сюжета игры 2000 года Spider-Man для Sony PlayStation One.<br />На ПК данная игра тоже выходила, но я в детстве играл именно в версию для соньки. Так что, ностальжи.</h3>
+						</div>
+						<div class="videos_item">
+							<iframe width="275" height="155" src="https://www.youtube.com/embed/h81yxDB_JDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <img src="img/company_icons/2.png" alt=""> -->
+							<h2>Imperator: Rome 1.0.1 Боспорское царство</h2>
+							<h3>На Imperator: Rome вышел первый патч, который пофиксил баги с масштабированием интерфейса.<br />Теперь я могу поиграть в игру!</h3>
+						</div>
+						<div class="videos_item">
+							<iframe width="275" height="155" src="https://www.youtube.com/embed/LI_FOzoZCGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <img src="img/company_icons/3.png" alt=""> -->
+							<h2>Galimulator Симулятор Галактики</h2>
+							<h3>Наткнулся тут на инди симулятор Галактики Galimulator.</h3>
+						</div>
+						<div class="videos_item">
+							<iframe width="275" height="155" src="https://www.youtube.com/embed/t0pAlSQ_TVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <img src="img/company_icons/4.png" alt=""> -->
+							<h2>Stellaris Преторианцы Кризис Х5</h2>
+							<h3>А у меня тут в одной из партий кризис преторианцы X5.</h3>
+						</div>
+						<div class="videos_item">
+							<iframe width="275" height="155" src="https://www.youtube.com/embed/pBQu1R76HF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <img src="img/company_icons/5.png" alt=""> -->
+							<h2>Запускаю Stellaris на андроид смартфоне</h2>
+							<h3>Транслируем игру со Стима на Андройд.</h3>
+						</div>
+						<div class="videos_item">
+							<iframe width="275" height="155" src="https://www.youtube.com/embed/in6YywlXaQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <img src="img/company_icons/6.png" alt=""> -->
+							<h2>Europa Universalis: Rome Вспоминаем классику</h2>
+							<h3>Ностальгирую по старой игрушке Пародоксов.</h3>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer  class="myFooter">
+					<div class="social">
+						<a href="https://www.youtube.com/channel/UC-9Ii1Dt-4cgSDUHovhPJng" target="_blank"><img src="img/social_icons/utube.png" alt=""></a>
+						<a href="https://vk.com/linnacume" target="_blank"><img src="img/social_icons/vk.png" alt=""></a>
+						<a href="https://steamcommunity.com/profiles/76561198052962287" target="_blank"><img src="img/social_icons/steam.png" alt=""></a>
+						<a href="https://github.com/LinNacume" target="_blank"><img src="img/social_icons/github.png" alt=""></a>
+						<a href="398188102323273731" target="_blank"><img src="img/social_icons/discord.png" alt=""></a>
+					</div>
+					<p>Михаил Праздников aka Lin Nacume 2019</p>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/script.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+</body>
+</html>
+
+
+	
+</body>
+</html>

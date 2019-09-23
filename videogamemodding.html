@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lin Nacume website</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="Lin.ico">
+
+</head>
+<body>
+	<div id="bodySite">
+		<div class="scene" id="scene">
+			<div class="sky"></div>
+			<div class="sun"></div>
+			<div class="moon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="stars">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<!-- <div class="cloud">
+		    	<img src="img/cloud-01.png" alt="" class="cloud1">
+    			<img src="img/cloud-02.png" alt="" class="cloud2">
+    			<img src="img/cloud-03.png" alt="" class="cloud3">
+    			<img src="img/cloud-04.png" alt="" class="cloud4">
+			</div>
+			<div class="waves">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+				<img src="img/alpha-mask-water-true.jpg" alt="waves" class="waves1">
+			</div> -->
+			<div class="water"></div>
+			<div class="waterFilter"  id="water">
+				<svg width="0" height="0"
+ 						xmlns="http://www.w3.org/2000/svg"
+ 						xmlns:xlink="http://www.w3.org/1999/xlink">
+  						<filter id="sketch">
+    						<feTurbulence type="fractalNoise" baseFrequency=".05 .5" numOctaves="3" result="noise1"></feTurbulence>
+    						<feColorMatrix in="noise1" type="hueRotate" values="0" result="noise2">
+      							<animate attributeName="values" from="0" to="360" dur="1.5s" repeatCount="indefinite"/>
+    						</feColorMatrix>
+    						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="noise2" />
+  						</filter>
+				</svg>
+			</div>
+		</div>
+		<div class="content">
+			<header>
+				<nav>
+					<div class="navigation" id="myNavigation">
+						<a href="index.html">HOME</a>
+<!-- 						<a href="">PORTFOLIO</a> -->
+						<a href="videogameblog.html">VIDEOGAME BLOG</a>
+						<a href="videogamemodding.html">VIDEOGAME MODDING</a>
+						<a id="menu" href="#" class="icon">&#9776;</a>	
+					</div>
+				</nav>
+			</header>
+			<main>
+				<!-- <div id="switch">
+      				<div id="circle"></div>
+    			</div> -->
+    			<div class="gamesmod_container">
+					<div class="gamesmod">
+						<div class="gamesmod_item">
+							<div class="gamesmod_item_element">
+								<!-- <img src="img/company_icons/1.png" alt=""> -->
+								<img src="https://steamcdn-a.akamaihd.net/steam/apps/25808/header.jpg?t=1447353866" alt="">
+							</div>
+							<div class="gamesmod_item_element">
+								<!-- <img src="img/company_icons/1.png" alt=""> -->
+								<h2>Мод на Европу 3 Божественный ветер с патчем 5.1</h2>
+								<h3>Мод добавляет на територию восточной и северной Европы 290 новых провинций и 156 новых гос образований.<br />Все позиции прорисованы, история прописана на начало игры, дальше - копипаст или пусто.<br />Добавлены ряд новых культур: мордва, меря, коми, марийцы, казаки.<br />Добавлены ряд решений и эвентов на казаков.<br />Можно подсылать наемных убийц к правителю или наследнику.<br />Добавил множество новых ресурсов (за основу взял ресурсы из MEIOU, но есть отличия).<br />На слабых машинах могут быть сильные тормоза и нехватка оперативной памяти!<br />P.S. Ссылку на мод добавлю позже.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer  class="myFooter">
+					<div class="social">
+						<a href="https://www.youtube.com/channel/UC-9Ii1Dt-4cgSDUHovhPJng" target="_blank"><img src="img/social_icons/utube.png" alt=""></a>
+						<a href="https://vk.com/linnacume" target="_blank"><img src="img/social_icons/vk.png" alt=""></a>
+						<a href="https://steamcommunity.com/profiles/76561198052962287" target="_blank"><img src="img/social_icons/steam.png" alt=""></a>
+						<a href="https://github.com/LinNacume" target="_blank"><img src="img/social_icons/github.png" alt=""></a>
+						<a href="398188102323273731" target="_blank"><img src="img/social_icons/discord.png" alt=""></a>
+					</div>
+					<p>Михаил Праздников aka Lin Nacume 2019</p>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/script.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+</body>
+</html>
+
+
+	
+</body>
+</html>
