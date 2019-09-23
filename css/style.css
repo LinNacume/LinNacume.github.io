@@ -132,9 +132,9 @@ footer {
 /*    clear: both;*/
 }
 
-.myFooter{
+/*.myFooter{
   background: repeating-radial-gradient(ellipse farthest-corner at center -400%, #f5c30e 30%, #518eac 100%) repeat scroll 0 0 #518eac;
-}
+}*/
 
 .social img{
 	margin-left: 10px;
@@ -193,22 +193,37 @@ footer p{
 		justify-content: center;
 	}
 
-	.videos_item{
+/*	.videos_item{
 		width: 45%;
-	}
+	}*/
 
 	.gamesmod_item{
 		width: 45%;
 	}
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 1128px){
+	.videos_item{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 732px){
 	.videos{
 		flex-direction: column;
 	}
 	.videos_item{
 		width: 100%;
 	}
+}
+
+@media screen and (max-width: 420px){
+/*	.videos{
+		flex-direction: column;
+	}
+	.videos_item{
+		width: 100%;
+	}*/
 
 	.gamesmod{
 		flex-direction: column;
@@ -222,6 +237,7 @@ footer p{
 	position: absolute;
 	width: 100%;
 	height: 100vh;
+	/*min-height: 100vh;*/
 	background: linear-gradient(to bottom, #BE4405, #F6C60C);
 	z-index: -100;
 
@@ -411,8 +427,9 @@ footer p{
 .water {
   position: absolute;
   background: repeating-radial-gradient(ellipse farthest-corner at center -400%, #f5c30e 30%, #518eac 100%) repeat scroll 0 0 #518eac;
-  width: 100%;
-  height: 100vh;
+  width: 100%; /* ширина*/
+  height: 100vh;  /*высота*/
+  /*min-height: 100vh;*/
   top: 68%;
   margin-bottom: 0;
 /*  opacity: 0.5;*/ /*прозрачность*/
